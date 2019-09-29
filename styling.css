@@ -1,0 +1,188 @@
+/* Makes it so the pictures is able to go have 100% height with no padding on the sides */
+
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+/* Background Image with height and width */
+
+body {
+	background-image: url(background.jpg);
+	background-size: 100% 100%;
+}
+
+/* The box everything is inside of with position/size/color */
+
+#content {
+	position: relative;
+	top: 325px;
+	height: 275px;
+	width: 420px;
+	margin: 0 auto;
+	border-radius: 10px;
+	background-image: linear-gradient(to bottom, #1f1f2b, #010101);
+	-webkit-box-shadow: 0 0 50px black;
+}
+
+/* Image/Logo image position */
+
+#content img {
+	margin-left: auto;
+	margin-right: auto;
+	height: 70px;
+	width: 70px;
+	display: block;
+}
+
+/* Login text position/font/size */
+
+#content h1 {
+	position: absolute;
+	top: 40px;
+	float: left;
+	margin-left: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	color: white;
+}
+
+/* Username & Password font/position/size/color/background */
+#content input {
+	position: relative;
+	top: 10px;
+	width: 360px;
+	height: 35px;
+	margin-left: 30px;
+	margin-top: 20px;
+	padding-left: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+	color: #727377;
+	background-image: linear-gradient(to right, #151419, #302f35);
+	border-radius: 5px;
+	border: none;
+}
+
+/* Position of the eye icon */
+
+#content span {
+	position: absolute;
+	top: 161px;
+	left: 350px;
+	font-size: 13px;
+	color: white;
+	background: #363636;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+/* Position, color, size and gap apart of Create and Login button */
+
+#content button {
+	position: relative;
+	top: 18px;
+	left: 18px;
+	width: 160px;
+	height: 35px;
+	background-image: linear-gradient(to right, #0e0e10, #151315, #1a1819, #1f1c1c, #24201f);
+	border-radius: 3px;
+	border: none;
+	margin: 15px;
+}
+
+/* Position. color and size of text inside Create and Login button*/
+
+#content h2 {
+	position: relative;
+	top: -10px;
+	left: -25px;
+	font-size: 11px;
+	color: white;
+	font-weight: bold;
+	display: inline-block;
+}
+
+/* Position, color, size of plus sign on Create button */
+
+#content p {
+	position: relative;
+	top: -35px;
+	left: 120px;
+	width: 20px;
+	height: 20px;
+	font-size: 10px;
+	color: white;
+	background: #363636;
+	padding: 3.5px;
+	border-radius: 50%;
+}
+
+/* Position, color, size of checkmark on login button */
+
+#content i {
+	position: relative;
+	top: -6px;
+	left: 40px;
+	font-size: 13px;
+	color: white;
+	background: #363636;
+	border-radius: 50%;
+	padding: 4px;
+}
+
+/* Color, position and size of the Create button*/
+
+#Create {
+	position: absolute;
+	top: 210px;
+	left: 30px;
+	width: 166px;
+	height: 41px;
+	border-radius: 5px;
+	background-image: linear-gradient(to right, #7fc6be, #bdd3e1);
+}
+
+/* Color, position and size of the Login button*/
+
+#Login {
+	position: absolute;
+	top: 210px;
+	left: 224px;
+	width: 166px;
+	height: 41px;
+	border-radius: 5px;
+	background-image: linear-gradient(to right, #fb97af, #d2aaa8);
+}
+
+/* Hover color effect for both buttons */
+
+#content button:hover {
+	background-image: linear-gradient(to right, #24201f,  #0e0e10);
+}
+
+/* Hover effect for plus sign on creation button */
+
+#content button:hover p {
+	transform: rotateZ(45deg);
+}
+
+/* Hover effect for the check mark */
+
+#content button:hover i {
+	transform: rotateZ(45deg);
+}
+
+/* Position of the Dropdown account creation */
+
+#Account-Create {
+	position: absolute;
+	top: 267px;
+	height: 200px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-image: linear-gradient(to bottom, #010100, #000000);
+	-webkit-box-shadow: 0 0 50px black;
+}

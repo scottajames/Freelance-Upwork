@@ -1,0 +1,83 @@
+<html>
+<head>
+
+		<!-- Link to the styling of the website and so the website can read the screen size -->
+	<link rel="stylesheet" type="text/css" href="styling.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Link to all the icons used YOU MUST KEEP THESE TO KEEP THE ICONS-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+
+		<!-- Everything you see is inside of this Div -->
+	<div id="content">
+
+
+			<!-- Logo Image (You will need to change this to display you own image the name of the image and the file type like below Hexagon.png -->
+		<img src="Hexagon.png">
+
+
+				<!-- Login Title -->
+			<h1>Login</h1>
+
+
+			<!-- User name and Password box -->
+		<input type="text" placeholder="Username">
+		<input type="password" placeholder="Password" id="Password">
+		<span class="glyphicon glyphicon-eye-close" onclick="pwdToggle()"></span>
+
+
+		<!-- Password Show/Hide button-->
+<script>
+	function pwdToggle() {
+  		var x = document.getElementById("Password");
+  			if (x.type === "password") {
+    			x.type = "text";
+  		} else {
+    		x.type = "password";
+  	}
+}
+</script>
+
+
+		<!-- Create and Login button (NEEDS A LINK IN <a href="#" THE # NEEDS TO BE REPLACED WITH A LINK TO THE NEXT PAGE) -->
+	<div id="Create"></div><div id="Login"></div>
+		<button onclick="ButtonFunction()" type="button"><h2>Create</h2><p>+</p></button>
+		<button type="button"><a href="#"><h2>Login</h2><i class="material-icons">check</i></a></button>
+
+
+		<!-- Create dropdown after create button is clicked -->
+	<div id="Account-Create">
+		<input type="text" placeholder="Username">
+			<input type="password" placeholder="Password">
+		<input type="text" placeholder="E-mail">
+</div>
+
+
+	<!-- Hides the create dropdown when the website loads otherwise it would display it before clicking the button -->
+<script>
+	window.onload = function() {
+  		document.getElementById('Account-Create').style.display = 'none';
+};
+</script>
+
+	<!-- This makes the create button toggle between showing and hiding the dropdown -->
+<script>
+	function ButtonFunction() {
+  		var x = document.getElementById("Account-Create");
+  			if (x.style.display === "none") {
+    		x.style.display = "block";
+  		} else {
+    		x.style.display = "none";
+  	}
+}
+</script>
+
+	</div>
+
+</body>
+
+</html>
