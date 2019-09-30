@@ -1,0 +1,49 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styling.css">
+<script src="https://unpkg.com/wavesurfer.js"></script>
+
+
+	</head>
+	<body>
+			
+<div id="waveform">
+</div>
+
+<div id="Play-Button-Background">
+</div>
+
+<div id="Play-Button">
+<button onclick="PlayButton()">Play</button>
+</div>
+
+<script>
+   var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+     scrollParent: false,
+});
+</script>
+
+<script>
+    wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+</script>
+
+<script>
+    wavesurfer.setCursorColor("white"),
+    wavesurfer.setProgressColor("#FF92C8"),
+    wavesurfer.setWaveColor("#FFBDDE")
+    </script>
+
+<script>
+    wavesurfer.skipforward();
+</script>
+
+<script>
+    function PlayButton() {
+        wavesurfer.playPause();
+    }
+</script>
+
+	</body>
+	</html>

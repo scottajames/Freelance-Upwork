@@ -1,0 +1,18 @@
+#waveform {
+	margin: 0 auto;
+	width: 500px;
+}
+
+#Play-Button {
+	text-align: center;
+}
+
+button {
+	font-size: 18px;
+	color: white;
+	background-image: linear-gradient(to right top, #ffff00, #ffc355, #ff99ac, #ff9bf0, #aaaaff);
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: none;
+}
